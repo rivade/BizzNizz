@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Lobster;
+    src: url("./Lobster-Regular.ttf");
+}
+
+@font-face {
+    font-family: LobsterTwo;
+    src: url("./LobsterTwo-Italic.ttf");
+}
+
+@keyframes rotateMenu {
+    0% {
+        transform: rotateX(-90deg)
+    }
+
+    70% {
+        transform: rotateX(20deg)
+    }
+
+    100% {
+        transform: rotateX(0deg)
+    }
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    margin: 0;
+}
+
+.topscreen {
+    display: grid;
+    grid-auto-flow: column;
+    color: white;
+    place-items: center;
+    line-height: 0%;
+    margin: 0;
+    background-color: #1c1c1c;
+    height: 30px;
+}
+
+header {
+    background: #4a4a4a;
+    height: 110px;
+    width: 100%;
+}
+
+.logo {
+    margin: 0;
+    text-align: center;
+    font-family: Lobster;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 0px;
+    color: white;
+    text-shadow: -2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000;
+}
+
+.logo:hover {
+    color: white;
+}
+
+nav {
+    font-size: 30px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    background-color: #333;
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    z-index: 1000;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+footer {
+    background: darkgray;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    font-size: 20px;
+    line-height: 5px;
+    height: 100%;
+    align-self: stretch;
+    display: grid;
+    place-items: center;
+}
+
+.browse {
+    text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.current {
+    background-color: darkgray;
+}
+
+.current:hover {
+    color: black;
+}
+
+.brands {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 100px;
+
+}
+
+.mail {
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 15px;
+}
+
+.picture {
+    width: 150px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .2);
+    overflow: hidden;
+}
+
+.card-image {
+    margin-left: -22.5px;
+    margin-right: auto;
+    width: 50%;
+    object-position: center;
+}
+
+.item {
+    display: grid;
+    place-items: center;
+    line-height: 0%;
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    color: white;
+}
+
+.navbar a:hover,
+.dropdown:hover {
+    background-color: #1c1c1c;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: auto;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    grid-auto-flow: column;
+    display: grid;
+    animation: rotateMenu 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.brand{
+    min-height: 100px;
+    margin-top: 30px;
+}
