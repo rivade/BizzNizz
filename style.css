@@ -34,10 +34,26 @@ body {
     grid-auto-flow: column;
     color: white;
     place-items: center;
-    line-height: 0%;
-    margin: 0;
     background-color: #1c1c1c;
-    height: 30px;
+    min-height: 30px;
+}
+
+.topscreen p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 1em;
+    max-height: 2em;
+    margin: 0px;
+}
+
+.main p, h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 1em;
+    max-height: 2em;
+    margin: 0px;
 }
 
 header {
@@ -90,6 +106,7 @@ footer {
 }
 
 .homepage {
+    min-height: 300px;
     text-align: center;
     align-self: stretch;
     display: grid;
@@ -137,15 +154,19 @@ main {
 
 .item {
     display: grid;
-    grid-template-rows: 240px 7% 7%;
+    grid-template-rows: 240px auto auto;
     place-items: center;
-    line-height: 0%;
-    margin: 0px;
     height: 300px;
 }
 
 .item p{
+    text-align: center;
     margin-top: -3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 1em;
+    max-height: 2em;
 }
 
 
@@ -156,7 +177,6 @@ main {
 
 
 .navbar a {
-    float: left;
     font-size: 16px;
     color: white;
     text-align: center;
@@ -191,7 +211,7 @@ main {
 .dropdown-content a {
     float: none;
     color: black;
-    padding: 12px 16px;
+    padding: 12px 0px;
     text-decoration: none;
 }
 
