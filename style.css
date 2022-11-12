@@ -66,6 +66,7 @@ nav {
     text-align: center;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar {
@@ -73,7 +74,6 @@ nav {
     font-family: Arial;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    z-index: 1000;
 }
 
 
@@ -118,6 +118,11 @@ main {
     border-radius: 10px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, .2);
     overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.picture:hover{
+    transform: scale(1.1);
 }
 
 .card-image {
@@ -132,6 +137,7 @@ main {
     place-items: center;
     line-height: 0%;
     margin: 0px;
+    min-height: 200px;
 }
 
 
@@ -193,6 +199,6 @@ main {
 }
 
 .brand{
-    min-height: 100px;
+    min-height: 80px;
     margin-top: 30px;
 }
